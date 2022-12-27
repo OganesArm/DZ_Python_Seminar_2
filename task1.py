@@ -1,7 +1,17 @@
 #Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 #Пример:  6782 -> 23           0,56 -> 11 
+number = input("Введите вещественное число: ")
+summa=0
+for i in number:
+    if i.isdigit():
+        summa+=int(i)
+print(summa)
 
-def InputNumbers(inputText):
+
+
+
+
+"""def InputNumbers(inputText):
     yes = False
     while not yes:
         try:
@@ -22,4 +32,4 @@ def sumNums(num):
 
 
 
-print(f"Сумма цифр = {sumNums(num)}")
+print(f"Сумма цифр = {sumNums(num)}")"""
